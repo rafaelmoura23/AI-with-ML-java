@@ -35,8 +35,8 @@ public class Exercicio4 {
             while ((linha = br.readLine()) != null) {
                 String[] valores = linha.split(divisor);
                 String nome = valores[0];
-                int quantidade = Integer.parseInt(valores[1]); // Supondo que a quantidade está na segunda coluna
-                double preco = Double.parseDouble(valores[2]); // Supondo que o preço está na terceira coluna
+                int quantidade = Integer.parseInt(valores[1]);
+                double preco = Double.parseDouble(valores[2]); 
                 
                 double valorTotal = quantidade * preco;
 
