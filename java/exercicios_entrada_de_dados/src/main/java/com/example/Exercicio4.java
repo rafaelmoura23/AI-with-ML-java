@@ -15,7 +15,7 @@ public class Exercicio4 {
 
         double maiorValorTotal = 0.0;
         String produtoMaisCaro = "";
-        
+
         // Buffer para armazenar os dados para o novo arquivo
         StringBuilder sb = new StringBuilder();
 
@@ -36,8 +36,8 @@ public class Exercicio4 {
                 String[] valores = linha.split(divisor);
                 String nome = valores[0];
                 int quantidade = Integer.parseInt(valores[1]);
-                double preco = Double.parseDouble(valores[2]); 
-                
+                double preco = Double.parseDouble(valores[2]);
+
                 double valorTotal = quantidade * preco;
 
                 if (valorTotal > maiorValorTotal) {
@@ -47,11 +47,12 @@ public class Exercicio4 {
 
                 sb.append(String.join(divisor, valores)).append(divisor).append(valorTotal).append("\n");
 
-
-                System.out.println("Produto: " + nome + ", Quantidade: " + quantidade + ", Preço: " + preco + ", Valor Total: " + valorTotal);
+                System.out.println("Produto: " + nome + ", Quantidade: " + quantidade + ", Preço: " + preco
+                        + ", Valor Total: " + valorTotal);
             }
 
-            System.out.println("Produto com o maior valor total em estoque: " + produtoMaisCaro + " com valor total: " + maiorValorTotal);
+            System.out.println("Produto com o maior valor total em estoque: " + produtoMaisCaro + " com valor total: "
+                    + maiorValorTotal);
 
             try (BufferedWriter bw = new BufferedWriter(new FileWriter(novoArquivoCSV))) {
                 bw.write(sb.toString());
