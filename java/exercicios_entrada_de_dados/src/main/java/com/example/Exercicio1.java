@@ -57,7 +57,7 @@ public class Exercicio1 {
                     }
                 }
             }
-            double mediaGeral = (numeroDeNotas > 0) ? (somaNotas / numeroDeNotas) : 0.0;
+            double mediaGeral = somaNotas / numeroDeNotas;
             System.out.println("Média geral da turma: " + mediaGeral);
             System.out.println("Nome do aluno com a maior nota: " + alunoMaiorNota);
             System.out.println("Nome do aluno com a menor nota: " + alunoMenorNota);
