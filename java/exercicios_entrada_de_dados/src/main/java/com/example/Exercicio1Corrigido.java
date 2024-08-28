@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Exercicio1_corrigido {
+public class Exercicio1Corrigido {
     String inputFile = "java\\exercicios_entrada_de_dados\\arquivo.txt";
 
     List<Aluno> alunos = new ArrayList<>();
